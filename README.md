@@ -4,3 +4,4 @@ Positron emission tomography is a modality to generate images, mostly of interna
 * NEMA standards implemented in Imagej
 * Visualization of data
 
+Read through the *data description* file to  understand the format of the binary file. Not specifically point 5. The program parser_binary_to_text.py  is used to convert the data from binary to text and then visualized using various jupyter notbooks
