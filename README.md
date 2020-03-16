@@ -20,10 +20,12 @@ Here, we will deal with normalization errors. These are errors that arise due to
 
 In a simples way, the main assumption is that the phantom has a uniform variation in intensity. So, the coouts in detector $i$ in coincidence with a group of detectors B is improved by summing all the counts in B. By summing the count in the group, the statistics is improved without any information leakage.
 
+### 4. Scattering Correction
+Scatter events are inevitaible in PET systems. There are some techniques developed to measure scattering data by using CT. Here we design a method to use the energy distribution per LOR to estimate the scatter correction. These are inturn fed into the image reconstruction algorithm. This leads to a two way process.
 
-### 4. Data visualization
+### 5. Data visualization
 Several data visualizations files are in the repo. Images  and normalization coefficients visualized. Outlier detection methods are applied to identify dead pixels.
 
 
-### 4. NEMA standards implemented in ImageJ
+### 5. NEMA standards implemented in ImageJ
 NEMA - NU 2004 standards are a set of rules defined to facilitate the comparison of results across different systems.
