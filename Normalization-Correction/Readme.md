@@ -1,4 +1,4 @@
-### 3. Normalization correction
+# Normalization correction
 Here, we will deal with normalization errors. These are errors that arise due to the inherent geometry of the system. 
 A simple way to think of it is that if a cylindrical source is used, the density of lines through the center will be 
 higher than at the edge, creating a fictitious high density at the center. To correct this, we use a flat phantom and 
