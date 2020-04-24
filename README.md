@@ -13,7 +13,9 @@ The event constitutes 4 segments
 3. The time is the last thing to record.
 
 ### 2. Data conversion
-`castor-recon` accepts a specific format of data called CDF. Details description is on the [wbsite](http://www.castor-project.org/). Provided in the program folder is a C++ program that converts binary to CDF. PET images suffer from various errors that must be corrected. We have data for normalization correction and will be processed in the appropriate format.
+`castor-recon` accepts a specific format of data called CDF. Details description is on the [wbsite](http://www.castor-project.org/). Provided in the program folder is a C++ program that converts binary to CDF. PET images suffer from various errors that must be corrected. We have data for normalization correction and will be processed in the appropriate format. There are two CDF formats, 
+  1. __Listmode__: the events are recorded as a list. Every event that comes in the append to the file. The program to convert binary to bin file is in foleder[todo]
+  2. __Histogram mode__: In the histogram mode, the data are bin to each LOR. The radioactive decay correction is applied as the events are binned. The file is located in [todo]
 
 ### 3. Normalization correction
 Here, we will deal with normalization errors. These are errors that arise due to the inherent geometry of the system. A simple way to think of it is that if a cylindrical source is used, the density of lines through the center will be higher than at the edge, creating a fictitious high density at the center. To correct this, we use a flat phantom and place it with it face adjacent to the detectors. Events recorded are then processed. One technique used to improve the statistics is called fan-sum which helps reduce the variance. A sketch is shown below of the process used to variance reduction. ![](https://github.com/jnsofini/Computed-Tomography/blob/master/figures/fansum.png). 
